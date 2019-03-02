@@ -1,14 +1,70 @@
+@font-face {
+  font-family: "Borda";
+  src: url(./assets/fonts/Borda.ttf);
+}
+@font-face {
+  font-family: "Borda L";
+  src: url(./assets/fonts/BordaLight.ttf);
+}
+@font-face {
+  font-family: "Borda M";
+  src: url(./assets/fonts/BordaMedium.ttf);
+}
+@font-face {
+  font-family: "Borda DB";
+  src: url(./assets/fonts/BordaDemiBold.ttf);
+}
+@font-face {
+  font-family: "Borda B";
+  src: url(./assets/fonts/BordaBold.ttf);
+}
+@font-face {
+  font-family: "Borda EB";
+  src: url(./assets/fonts/BordaExtraBold.ttf);
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  overflow: hidden;
+  overflow-y: visible;
+  font-family: "Borda L";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #121212;
+}
+ul {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+/* COLORS
+  THEME-1-
+  1 : #50FEE5
+  2 : #00E1F8
+  3 : #0099F9
+  4 : #00BFFF
+  5 : #676CD6
+  6 : #93369C
+  THEME-2-
+  1 : #FFAB5D
+  2 : #F4847A
+  3 : #C86F92
+  4 : #8B6694
+  5 : #505A7E
+  6 : #2F4858
+  GLOBAL
+  grey: #121212
+  white: #FAFAFA
+*/
