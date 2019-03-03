@@ -7,6 +7,8 @@ import { TweenMax, Power2 } from "gsap/all";
 import metaPoints from "../assets/models/kinectPt";
 import resume from "../assets/icons/document.svg";
 import arrow from "../assets/icons/goArrow.svg";
+import github from "../assets/icons/github.svg";
+import mail from "../assets/icons/mail.svg";
 
 const Bold = styled.span`
   font-family: "Borda DB";
@@ -135,7 +137,56 @@ const Person = styled.div`
   left: 10vh;
   font-size: 4vh;
 `;
-
+const LinkIcon = styled(SvgLoader)`
+  position: absolute;
+  top: 1.6vh;
+  left: 1.2vh;
+  height: 3.2vh;
+  width: 4vh;
+  fill: none;
+  stroke: #fafafa;
+  stroke-width: 4px;
+  padding-right: 2.4vh;
+  border-right: 0.1px solid #fafafa;
+`;
+const LinkContent = styled.div`
+  position: absolute;
+  top: 1.2vh;
+  left: 10vh;
+  font-size: 2.4vh;
+  font-family: "Borda L";
+`;
+const MailLinks = styled.div`
+  position: absolute;
+  width: 20vh;
+  height: 7.2vh;
+  top: 62.4vh;
+  transition: 400ms;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: 400ms;
+    transform: scale(1.05);
+  }
+  &:hover ${LinkIcon} {
+    stroke: #ffab5d;
+  }
+`;
+const GHLinks = styled.div`
+  position: absolute;
+  width: 20vh;
+  height: 7.2vh;
+  top: 62.4vh;
+  left: 20vh;
+  transition: 400ms;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: 400ms;
+    transform: scale(1.05);
+  }
+  &:hover ${LinkIcon} {
+    stroke: #ffab5d;
+  }
+`;
 const BTL = styled.div`
   position: absolute;
   background: #fafafa;
@@ -453,6 +504,35 @@ export default class Home extends Component {
               </span>
             </Person>
           </BoxName>
+          <a href="mailto:n.ozgurozturk@gmail.com">
+            <MailLinks>
+              <LinkIcon path={mail} />
+              <LinkContent>
+                <span
+                  className="contact"
+                  onMouseOver={this.handleMouseOver}
+                  onMouseOut={this.handleMouseOut}
+                >
+                  Contact <br />
+                  Me
+                </span>
+              </LinkContent>
+            </MailLinks>
+          </a>
+          <a href="https://github.com/nozgurozturk" target="blank">
+            <GHLinks>
+              <LinkIcon path={github} />
+              <LinkContent>
+                <span
+                  className="github"
+                  onMouseOver={this.handleMouseOver}
+                  onMouseOut={this.handleMouseOut}
+                >
+                  Github
+                </span>
+              </LinkContent>
+            </GHLinks>
+          </a>
         </Boxes>
         <Echo />
       </div>

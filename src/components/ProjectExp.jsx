@@ -8,6 +8,12 @@ const Abstract = styled.p`
   right: 10vw;
   font-size: 3vh;
   color: #fafafa;
+  @media (max-width: 768px) {
+    top:26vh;
+    right: unset;
+    left:10vw;
+    width:40vw;
+  }
 `;
 const ParOne = styled.p`
   position: absolute;
@@ -17,32 +23,52 @@ const ParOne = styled.p`
   left: 10vw;
   font-size: 2.6vh;
   color: #fafafa;
-`;
-const ParTwo = styled.p`
-  position: absolute;
-  letter-spacing: 0.5vh;
-  width: 80vw;
-  top: 380vh;
-  left: 10vw;
-  font-size: 2.6vh;
-  color: #fafafa;
+  @media (max-width: 768px) {
+    top:100vh;
+    left:10vw;
+    width:80vw;
+  }
 `;
 const ImageOne = styled.img`
   position: absolute;
   top: 140vh;
   right: 10vw;
   width: 45vw;
-  object-fit: cover;
-  z-index: -99;
+  @media (max-width: 768px) {
+    top:170vh;
+    right: unset;
+    left:10vw;
+    width:80vw;
+  }
 `;
 const ImageTwo = styled.img`
-  top: 260vh;
+  top: 250vh;
   left: 10vw;
   width: 80vw;
   position: absolute;
+  @media (max-width: 768px) {
+    top:230vh;
+    left:10vw;
+    width:80vw;
+  }
+`;
+const ParTwo = styled.p`
+  position: absolute;
+  letter-spacing: 0.5vh;
+  width: 80vw;
+  top: 340vh;
+  left: 10vw;
+  font-size: 2.6vh;
+  color: #fafafa;
+  @media (max-width: 768px) {
+    top:270vh;
+    right: unset;
+    width:80vw;
+  }
 `;
 
 export default class ProjectExp extends Component {
+
   render() {
     return (
       <div>

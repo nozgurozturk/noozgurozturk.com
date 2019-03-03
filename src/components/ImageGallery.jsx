@@ -7,8 +7,12 @@ import rightArrow from "../assets/icons/rightArrow.svg";
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 420vh;
+  top: 400vh;
   width: 100vw;
+  @media (max-width: 768px) {
+    top:380vh;
+    right: unset;
+  }
 `;
 const Display = styled.img`
   width: 100vw;
@@ -25,12 +29,23 @@ const Arrow = styled(SvgLoader)`
   stroke-width: 10px;
   fill: none;
   cursor: pointer;
+
 `;
 const Left = styled(Arrow)`
   left: 2vw;
+  transition: 400ms;
+  &:hover {
+    stroke: #f4847a;
+    transition: 400ms;
+  }
 `;
 const Right = styled(Arrow)`
-  right: 3vw;
+  right: 6vw;
+  transition: 400ms;
+  &:hover {
+    stroke: #f4847a;
+    transition: 400ms;
+  }
 `;
 
 const Nav = styled.li`
@@ -40,11 +55,20 @@ const Nav = styled.li`
   font-size: 3vh;
   bottom: 4vh;
   cursor: pointer;
-  transition: 400ms;
   right: ${props => props.right};
   color: ${props => props.color};
+  transition: 400ms;
   &:hover {
     color: #f4847a;
+    transition: 400ms;
+  }
+  @media (max-width: 1024px) {
+    width: ${props => props.width};
+    text-align: center;
+    background-color: ${props => props.bgColor};
+    bottom: 1vh;
+    left: ${props => props.mleft};
+    right: unset;
     transition: 400ms;
   }
 `;
@@ -52,7 +76,7 @@ const Nav = styled.li`
 export default class ImageGallery extends Component {
   constructor(props) {
     super(props);
-    this.state = { activePhoto: 0, numbers: [0, 1, 2, 3, 4, 5, 6] };
+    this.state = { activePhoto: 0, numbers: [0, 1, 2, 3, 4, 5] };
   }
   nextPhoto = () => {
     if (this.state.activePhoto < 5) {
@@ -102,13 +126,15 @@ export default class ImageGallery extends Component {
                     ? "#FFAB5D;"
                     : "rgba(255,255,255,1.0)"
                 }
+                width={100 / 6 + "vw"}
+                mleft={i * (100 / 6) + "vw"}
                 bgColor={
-                  this.props.onActiveWork === i
+                  this.state.activePhoto === i
                     ? "rgba(255,255,255,0.5)"
                     : "rgba(255,255,255,0.1)"
                 }
                 key={i}
-                right={(6 - i) * 4 - 1 + "vw"}
+                right={(6 - i) * 6 - 1 + "vw"}
               >
                 [{i + 1}]
               </Nav>

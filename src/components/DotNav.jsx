@@ -1,19 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-// const Dot = styled.li`
-//   position: absolute;
-//   width: 23px;
-//   height: 23px;
-//   border: 3px solid #FAFAFA;;
-//   border-radius: 23px;
-//   bottom: 10vh;
-//   right: ${props => props.left};
-//   background-color: ${props => props.bgColor};
-//   @media (max-width: 1024px) {
-//     bottom: 20vh;
-//   }
-// `;
 const Dot = styled.li`
   position: absolute;
   letter-spacing: 0.4vh;

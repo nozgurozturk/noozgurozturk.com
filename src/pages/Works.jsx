@@ -24,60 +24,35 @@ export default class Works extends Component {
           name: "moorse",
           abstract:
             "moorse is morse code translator feature of auido and visual decoding.it build with tone.js and react.",
-          model: "moorse",
-          technologies: ["React", "Tone.js"],
-          year: "2018",
-          field: "audio",
-          role: ["design", "development"],
-          link: "https://moorse.site"
+          model: "moorse"
         },
         {
           id: 2,
           name: "skin",
           abstract:
             "skin is morse code translator feature of auido and visual decoding.it build with tone.js and react.",
-          model: "skin",
-          technologies: ["Rhinoceros", "Ardunio", "Hand Tools"],
-          year: "2016",
-          field: "Installation",
-          role: ["design", "coding", "construct"],
-          link: "http://www.meds-workshop.ro/winning-projects/skin/"
+          model: "skin"
         },
         {
           id: 3,
           name: "shelves",
           abstract:
             "shelves is morse code translator feature of auido and visual decoding.it build with tone.js and react.",
-          model: "shelves",
-          technologies: ["Rhinoceros", "CNC", "Hand Tools"],
-          year: "2018",
-          field: "Furniture",
-          role: ["design", "construct"],
-          link: ""
+          model: "shelves"
         },
         {
           id: 4,
           name: "kinect",
           abstract:
             "kinect is morse code translator feature of auido and visual decoding.it build with tone.js and react.",
-          model: "kinect",
-          technologies: ["Kinect SDK", "Three.js"],
-          year: "2019",
-          field: "visual",
-          role: ["development"],
-          link: "https://kinectme.site"
+          model: "kinect"
         },
         {
           id:5,
           name: "experiments",
           abstract:
           "experiments is morse code translator feature of auido and visual decoding.it build with tone.js and react.",
-          model: "experiments",
-          technologies: ["Three.js", "Tone.js", "Processing"],
-          year: "2019",
-          field: "experimental",
-          role: ["design", "development"],
-          link: "https://experiments.site"
+          model: "experiments"
         }
       ]
     };

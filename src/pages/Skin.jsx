@@ -5,6 +5,7 @@ import ProjectExp from "../components/ProjectExp";
 import ProjectInfo from "../components/ProjectInfo";
 import ProjectName from "../components/ProjectName";
 import Jumbotron from "../components/Jumbotron";
+import Footer from "../components/Footer";
 
 export default class Skin extends Component {
   constructor(props) {
@@ -22,7 +23,8 @@ export default class Skin extends Component {
         technologies: "Rhinoceros, Ardunio, Hand Tools",
         role: "Design, Coding, Construct",
         year: "2016"
-      }
+      },
+      link: "http://www.meds-workshop.ro/winning-projects/skin/"
     };
   }
   render() {
@@ -34,6 +36,7 @@ export default class Skin extends Component {
         <Jumbotron onName={this.state.name} />
         <ProjectExp onExp={this.state.exp} onName={this.state.name} />
         <ImageGallery onImage={this.state.name} />
+        <Footer onLink={this.state.link}></Footer>
       </div>
     );
   }
