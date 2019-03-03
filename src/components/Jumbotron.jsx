@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import {TimelineMax, Power2} from "gsap/all";
 import { SvgLoader, SvgProxy } from "react-svgmt";
+import CSSPlugin from 'gsap/CSSPlugin';
+
+const C = CSSPlugin;
 
 const Jb = styled(SvgLoader)`
 position:absolute;

@@ -79,7 +79,6 @@ class ProjectName extends Component {
       <div>
         
         <PrjName bot={this.state.valueBot} top={this.state.valueTop}>
-        {this.props.onId}
      {this.props.onName}
         </PrjName>
       </div>

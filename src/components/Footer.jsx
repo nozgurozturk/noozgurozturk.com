@@ -15,7 +15,7 @@ const Wrapper = styled.div`
     top: 470vh;
   }
 `;
-const WebsiteLink = styled.button`
+const WebsiteLink = styled.div`
   position: absolute;
   bottom: 6vh;
   right: 41vw;
