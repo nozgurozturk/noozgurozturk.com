@@ -1,119 +1,92 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { SvgLoader } from "react-svgmt";
-import prevArrow from "../assets/icons/leftArrow.svg";
-import nextArrow from "../assets/icons/rightArrow.svg";
 import arrow from "../assets/icons/goArrow.svg";
 
 const Wrapper = styled.div`
   position: absolute;
-  height: 20vh;
+  height: 24vh;
   width: 100vw;
   border-top: 0.1px solid #fafafa;
-  top: 490vh;
+  top: ${props => props.top};
   @media (max-width: 768px) {
-    top: 470vh;
+    top: ${props => props.mtop};
   }
 `;
-const WebsiteLink = styled.div`
+
+const Logo = styled.h1`
   position: absolute;
-  bottom: 6vh;
-  right: 41vw;
-  display: block;
-  height: 8vh;
-  width: 18vw;
-  border: 1px solid #fafafa;
-  padding: 1.5vh 1.5vh 1.5vh 2vh;
-  font-size: 4vh;
+  left: 5vw;
+  font-family: "Borda BI";
+  font-size: 10vh;
+  color: #121212;
+  text-shadow: -1px -1px 0 #fafafa, 1px -1px 0 #fafafa, -1px 1px 0 #fafafa,
+    1px 1px 0 #fafafa;
+  transition: 400ms;
+  &:hover {
+    text-shadow: -1px -1px 0 #f4847a, 1px -1px 0 #f4847a, -1px 1px 0 #f4847a,
+      1px 1px 0 #f4847a;
+    color: #f4847a;
+    transition: 400ms;
+  }
+`;
+const Name = styled.h4`
+  font-family: "Borda LI";
+  position: absolute;
+  font-size: 3vh;
+  color: #fafafa;
+  left: 5vw;
+  top: 14vh;
+`;
+const GoArrow = styled(SvgLoader)`
+  position: absolute;
+  top: 0.2vh;
+  right: -3vw;
+  height: 2vh;
+  fill: none;
+  stroke: #fafafa;
+  stroke-width: 10px;
+  transition: 400ms;
+`;
+const Direction = styled.div`
+  position: absolute;
+  top: ${props => props.top};
+  right: 7vw;
+  font-size: 3vh;
   text-align: left;
   color: #fafafa;
   transition: 400ms;
-  background-color: unset;
   font-family: "Borda M";
   &:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    color: #f4847a;
     transition: 400ms;
     transform: scale(1.05);
   }
-  @media (max-width: 1024px) {
-    bottom: 4vh;
-    height: 12vh;
-    width: 30vw;
-    right: 35vw;
+  &:hover ${GoArrow} {
+    stroke: #f4847a;
+    transition: 400ms;
+    height: 3vh;
   }
 `;
-const PBox = styled.div`
-  position: absolute;
-  bottom: 6vh;
-  color: #fafafa;
-  font-size: 4vh;
-  width: 10vw;
-  height: 6vh;
-  @media (max-width: 1024px) {
-    font-size: 3vh;
-    width: 20vw;
-
-  }
-`;
-const Pnext = styled(PBox)`
-  right: 3vw;
-  text-align: start;
-`;
-const Pprev = styled(PBox)`
-  left: 3vw;
-  text-align: end;
-`;
-const Arrow = styled(SvgLoader)`
-  position: absolute;
-  height: 6vh;
-  bottom:0vh;
-  stroke: #fafafa;
-  stroke-width: 10px;
-  fill: none;
-  cursor: pointer;
-`;
-const Next = styled(Arrow)`
-  right: 0;
-`;
-const Prev = styled(Arrow)`
-  left: 0;
-`;
-
-const GoArrow = styled(SvgLoader)`
-  position: absolute;
-  top: 1.5vh;
-  right: 1.5vh;
-  height: 3vh;
-  fill: none;
-  stroke: #fafafa;
-  stroke-width: 8px;
-`;
-
 export default class Footer extends Component {
   render() {
     return (
-      <Wrapper>
+      <Wrapper top={this.props.onTop + "vh"} mtop={this.props.onMTop + "vh"}>
+      <Link to={"/"}>
+        <Logo>NOO</Logo>
+        </Link>
+        <Name>N.Ozgur Ozturk</Name>
         <a href={this.props.onLink} target="blank">
-          <WebsiteLink>
+          <Direction top={10 + "vh"}>
             Go to Website <GoArrow path={arrow} />
-          </WebsiteLink>
+          </Direction>
         </a>
-        <Pnext>
-          Previous
-          <br />
-          Project
-          <Arrow>
-            <Next path={nextArrow} />
-          </Arrow>
-        </Pnext>
-        <Pprev>
-          Next
-          <br />
-          Project
-          <Arrow>
-            <Prev path={prevArrow} />
-          </Arrow>
-        </Pprev>
+        <Link to="/works">
+          <Direction top={18 + "vh"}>
+            Back to Works <GoArrow path={arrow} />
+          </Direction>
+        </Link>
       </Wrapper>
     );
   }

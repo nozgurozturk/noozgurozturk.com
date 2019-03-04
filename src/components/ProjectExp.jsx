@@ -5,7 +5,7 @@ const Abstract = styled.p`
   position: absolute;
   width: 45vw;
   top: 80vh;
-  right: 10vw;
+  left:40vw;
   font-size: 3vh;
   color: #fafafa;
   @media (max-width: 768px) {
@@ -17,7 +17,7 @@ const Abstract = styled.p`
 `;
 const ParOne = styled.p`
   position: absolute;
-  letter-spacing: 0.5vh;
+  letter-spacing: 0.2vh;
   width: 25vw;
   top: 140vh;
   left: 10vw;
@@ -54,9 +54,9 @@ const ImageTwo = styled.img`
 `;
 const ParTwo = styled.p`
   position: absolute;
-  letter-spacing: 0.5vh;
+  letter-spacing: 0.2vh;
   width: 80vw;
-  top: 340vh;
+  top: 330vh;
   left: 10vw;
   font-size: 2.6vh;
   color: #fafafa;

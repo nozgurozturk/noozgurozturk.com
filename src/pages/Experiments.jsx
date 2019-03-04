@@ -15,13 +15,14 @@ top:100vh;
 const Wip = styled.h1`
 position:absolute;
 width:100%;
-top:40vh;
+top:80vh;
 font-style:"Borda B";
 color :#FAFAFA;
 text-align:center;
 `;
-const Noise = styled(SvgLoader)`
+const Triangle = styled(SvgLoader)`
 position:absolute;
+top:0vh;
 left:30vw;
 width:40vw;
 fill:#FAFAFA;
@@ -42,7 +43,7 @@ export default class Experiments extends Component {
       ],
       info: {
         field: "Experimental",
-        technologies: "Three.js, Tone.js, Processing",
+        techs: "Three.js, Tone.js, Processing",
         role: "Design, Development",
         year: "2019"
       }
@@ -55,10 +56,8 @@ export default class Experiments extends Component {
         <ProjectName onName={this.state.name} />
         <ProjectInfo onInfo={this.state.info} />
         <Jumbotron onName={this.state.name} />
-        {/* <ProjectExp onExp={this.state.exp} onName={this.state.name} />
-        <ImageGallery onImage={this.state.name} /> */}
         <WipWrapper>
-        <Noise path={wip}></Noise>
+        <Triangle path={wip}></Triangle>
         <Wip>THIS CONTENT IS NOT AVAILABLE DURING IN BETA</Wip>
         </WipWrapper>
       </div>

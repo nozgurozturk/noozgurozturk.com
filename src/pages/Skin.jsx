@@ -14,13 +14,13 @@ export default class Skin extends Component {
       id: 2,
       name: "skin",
       exp: [
-        "skin is morse code translator feature of auido and visual decoding.it build with tone.js and react.",
-        "Bacon ipsum dolor amet jowl ground round landjaeger, pork belly pork porchetta chuck chicken tenderloin salami cow kevin. Beef ribs tenderloin kevin frankfurter. Bresaola burgdoggen pancetta filet mignon. Salami ribeye jerky kevin tail, filet mignon frankfurter. T-bone sausage chicken pork chop jerky beef ribs, tri-tip ground round ribeye jowl picanha.",
-        "Bacon ipsum dolor amet meatball brisket ham hock andouille. T-bone alcatra beef ribs, turkey tri-tip picanha salami. Kevin fatback ham hock sirloin, frankfurter sausage bacon t-bone chuck tenderloin. Pork chop jowl ribeye, prosciutto shankle t-bone chuck kevin venison spare ribs pork belly swine. Sausage brisket ball tip, pancetta tri-tip leberkas fatback ribeye cupim tongue pig pork chop alcatra ham. Boudin pastrami meatloaf beef leberkas corned beef sausage tri-tip, ribeye filet mignon pancetta.T-bone ball tip chuck, spare ribs biltong kevin brisket sirloin. Tri-tip jowl boudin beef ribs, rump bacon ham. Kevin shoulder jerky short loin bacon sirloin shankle spare ribs meatloaf frankfurter capicola pork brisket porchetta bresaola. Turkey kevin hamburger short loin tri-tip picanha shoulder pancetta. Tongue ribeye fatback, leberkas meatloaf burgdoggen ham hock ham chicken beef ribs sausage doner bacon."
+        "SKIN is a project that combines the concepts of recycling and technology in order to create an interactive installation.The workshop will be led by me and Ali Arslan. ",
+        "Our propose building a panel of arches or domes, utilising dierent diameters of sections from recycled advertising cardboard tubes. In addition to assembly, cutting and pasting these tubes, participants will have the chance to learn programming concepts, Arduino boards that will create, using motion sensors, a game of led lights installed in the cardboard walls. The result will be dictated by the curiosity of passersby and their movements that will create a playful and captivating visual efect.",
+        "Skin too is a digital layer that is placed on the spots where the kinesis of the city appears, detachedly from its form (wall, dome, arc, etc.).Its sole purpose is to mimic the “being” that passed it by shortly before. While doing this, it is possible that Skin will be inserting random/instantaneous reactions just like humans do. The actions of Skin depending on the technology it can use and the ability of perception of the sensors are improvable. However, at this stage the sensors can react to the “things” that pass by in forms of light and movement.In this context, time is a crucial parameter. Needless to say that whatever data is put in the digital tools, Skin an analog creation of men would be have the capability of reacting accordingly to that data.The whole process will be presented to the city as a high speed variation of the lamination of Bucharest. An arc built upon the road or a wall on the side of the road leading the scenery imitates the movements of the passers by, just like loosely sensing the human under a blanket, via tubes designed by men. It gives its surroundings fleeting memoirs, blends into the city; and when they are over, a new “kinetic” already starts to take its place on the stage/on their behalf."
       ],
       info: {
         field: "Installation",
-        technologies: "Rhinoceros, Ardunio, Hand Tools",
+        techs: "Rhinoceros, Ardunio, Hand Tools",
         role: "Design, Coding, Construct",
         year: "2016"
       },
@@ -36,7 +36,7 @@ export default class Skin extends Component {
         <Jumbotron onName={this.state.name} />
         <ProjectExp onExp={this.state.exp} onName={this.state.name} />
         <ImageGallery onImage={this.state.name} />
-        <Footer onLink={this.state.link}></Footer>
+        <Footer onLink={this.state.link} onTop={490} onMTop={470}></Footer>
       </div>
     );
   }

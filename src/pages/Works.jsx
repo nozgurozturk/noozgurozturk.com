@@ -23,35 +23,35 @@ export default class Works extends Component {
           id: 1,
           name: "moorse",
           abstract:
-            "moorse is morse code translator feature of auido and visual decoding.it build with tone.js and react.",
+            "moorse is morse code translator feature of audio and visual decoding.it build with tone.js and react.",
           model: "moorse"
         },
         {
           id: 2,
           name: "skin",
           abstract:
-            "skin is morse code translator feature of auido and visual decoding.it build with tone.js and react.",
+            "skin is a project that combines the concepts of recycling and technology in order to create an interactive installation.",
           model: "skin"
         },
         {
           id: 3,
           name: "shelves",
           abstract:
-            "shelves is morse code translator feature of auido and visual decoding.it build with tone.js and react.",
+            "shelves is library and storage for smally family in izmir. it is assembled by no glue of screw.",
           model: "shelves"
         },
         {
           id: 4,
-          name: "kinect",
+          name: "scenect",
           abstract:
-            "kinect is morse code translator feature of auido and visual decoding.it build with tone.js and react.",
+            "scenect is using depth data of kinect for scaning objects in real life. Also it convert this data for web interfaces.",
           model: "kinect"
         },
         {
           id:5,
           name: "experiments",
           abstract:
-          "experiments is morse code translator feature of auido and visual decoding.it build with tone.js and react.",
+          "In experiments, i want to use web technologies for making generative art.through this projects, my aim is improve my coding skill with my design background",
           model: "experiments"
         }
       ]

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Info = styled.div`
   position: absolute;
-  right: 15vw;
+  right: -5vw;
   top: 50vh;
   @media (max-width: 768px) {
     top: 15vh;
@@ -12,11 +12,9 @@ const Info = styled.div`
 `;
 const Header = styled.li`
   position: absolute;
-  font-weight: 300;
   font-size: 2.4vh;
   letter-spacing: 0.2vh;
   right: ${props => props.right};
-  align-content: space-between;
   color: #ffab5d;
   @media (max-width: 768px) {
     top: ${props => props.top};
@@ -24,15 +22,15 @@ const Header = styled.li`
   }
 `;
 const Content = styled.h4`
+  font-size: 2.4vh;
   margin: 0;
   padding: 0;
   position: absolute;
-  font-weight: 600;
-  top: 30px;
+  top: 5vh;
   color: #fafafa;
 `;
 
-const titles = ["field", "technologies", "role", "year"];
+const titles = ["field", "techs", "role", "year"];
 
 export default class ProjectInfo extends Component {
   render() {
@@ -43,7 +41,7 @@ export default class ProjectInfo extends Component {
             {titles.map((item, i) => (
               <Header
                 key={i}
-                right={(4 - i) * 15 - 20 + "vw"}
+                right={(4 - i) * 15 + "vw"}
                 top={i * 15 + 15 + "vh"}
               >
                 [{item}]<Content>{`${this.props.onInfo[item]}`}</Content>
