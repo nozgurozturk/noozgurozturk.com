@@ -16,7 +16,7 @@ export default class Skin extends Component {
       exp: [
         "SKIN is a project that combines the concepts of recycling and technology in order to create an interactive installation.The workshop will be led by me and Ali Arslan. ",
         "We propose  building a panel of arches or domes, utilising diferent diameters of sections from recycled advertising cardboard tubes. In addition to assembly, cutting and pasting these tubes, participants will have the chance to learn programming concepts, Arduino boards that will create, using motion sensors, a game of led lights installed in the cardboard walls. The result will be dictated by the curiosity of passersby and their movements that will create a playful and captivating visual efect.",
-        "Skin is a digital layer that is placed on the spots where the kinesis of the city appears, detachedly from its form (wall, dome, arc, etc.). Its sole purpose is to mimic the “being” that passed it by shortly before. While doing this, it is possible that Skin will be inserting random/instantaneous reactions just like humans do. The actions of Skin depending on the technology it can use and the ability of perception of the sensors are improvable. However, at this stage the sensors can react to the “things” that pass by in forms of light and movement.In this context, time is a crucial parameter. Needless to say that whatever data is put in the digital tools, Skin an analog creation of men would be have the capability of reacting accordingly to that data. The whole process will be presented to the city as a high speed variation of the lamination of Bucharest. An arc built upon the road or a wall on the side of the road leading the scenery imitates the movements of the passers by, just like loosely sensing the human under a blanket, via tubes designed by men. It gives its surroundings fleeting memoirs, blends into the city; and when they are over, a new “kinetic” already starts to take its place on the stage/on their behalf."
+        "Skin is a digital layer that is placed on the spots where the kinesis of the city appears, detachedly from its form (wall, dome, arc, etc.). Its sole purpose is to mimic the “being” that passed it by shortly before. While doing this, it is possible that Skin will be inserting random/instantaneous reactions just like humans do. The actions of Skin depending on the technology it can use and the ability of perception of the sensors are improvable. However, at this stage the sensors can react to the “things” that pass by in forms of light and movement.In this context, time is a crucial parameter."
       ],
       info: {
         field: "Installation",
@@ -36,7 +36,7 @@ export default class Skin extends Component {
         <Jumbotron onName={this.state.name} />
         <ProjectExp onExp={this.state.exp} onName={this.state.name} />
         <ImageGallery onImage={this.state.name} />
-        <Footer onLink={this.state.link} onTop={490} onMTop={470}></Footer>
+        <Footer onLink={this.state.link} onTop={470} onMTop={440}></Footer>
       </div>
     );
   }

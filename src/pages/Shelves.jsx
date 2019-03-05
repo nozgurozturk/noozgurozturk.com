@@ -35,7 +35,7 @@ export default class Shelves extends Component {
         <Jumbotron onName={this.state.name} />
         <ProjectExp onExp={this.state.exp} onName={this.state.name} />
         <ImageGallery onImage={this.state.name} />
-        <Footer onLink={this.state.link} onTop={490} onMTop={470}></Footer>
+        <Footer onLink={this.state.link} onTop={470} onMTop={440}></Footer>
       </div>
     );
   }

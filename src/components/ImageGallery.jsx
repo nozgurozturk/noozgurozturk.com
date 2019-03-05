@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { TweenMax } from "gsap/all";
 import { SvgLoader } from "react-svgmt";
 import leftArrow from "../assets/icons/leftArrow.svg";
 import rightArrow from "../assets/icons/rightArrow.svg";
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 400vh;
+  top: 380vh;
   width: 100vw;
   @media (max-width: 768px) {
-    top:380vh;
+    top:350vh;
     right: unset;
   }
 `;

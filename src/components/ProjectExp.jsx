@@ -15,59 +15,33 @@ const Abstract = styled.p`
     width:40vw;
   }
 `;
-const ParOne = styled.p`
+const Paragraph = styled.p`
   position: absolute;
   letter-spacing: 0.2vh;
   line-height:4vh;
-  width: 25vw;
-  top: 140vh;
+  width: ${props=>props.width};
+  top: ${props=>props.top};
   left: 10vw;
   font-size: 2.6vh;
   color: #fafafa;
   @media (max-width: 768px) {
-    top:100vh;
-    left:10vw;
-    width:80vw;
+    top:${props=>props.mtop};
+    width:${props=>props.mwidth};
   }
 `;
-const ImageOne = styled.img`
+const Image = styled.img`
   position: absolute;
-  top: 140vh;
+  width: ${props=>props.width};
+  top: ${props=>props.top};
   right: 10vw;
-  width: 45vw;
   @media (max-width: 768px) {
-    top:170vh;
+    top:${props=>props.mtop};
+    width:${props=>props.mwidth};
     right: unset;
     left:10vw;
-    width:80vw;
   }
 `;
-const ImageTwo = styled.img`
-  top: 250vh;
-  left: 10vw;
-  width: 80vw;
-  position: absolute;
-  @media (max-width: 768px) {
-    top:350vh;
-    left:10vw;
-    width:80vw;
-  }
-`;
-const ParTwo = styled.p`
-  position: absolute;
-  letter-spacing: 0.2vh;
-  width: 80vw;
-  top: 330vh;
-  left: 10vw;
-  font-size: 2.6vh;
-  line-height:4vh;
-  color: #fafafa;
-  @media (max-width: 768px) {
-    top:220vh;
-    right: unset;
-    width:80vw;
-  }
-`;
+
 
 export default class ProjectExp extends Component {
 
@@ -75,13 +49,13 @@ export default class ProjectExp extends Component {
     return (
       <div>
         <Abstract>{this.props.onExp[0]}</Abstract>
-        <ParOne>{this.props.onExp[1]}</ParOne>
-        <ImageOne
+        <Paragraph top={130+ "vh"} width={25 + "vw"} mtop={100 + "vh"} mwidth={80 + "vw"}>{this.props.onExp[1]}</Paragraph>
+        <Image top={130 + "vh"} width={45 + "vw"} mtop={170 + "vh"} mwidth={80 + "vw"}
           src={require(`../assets/images/${this.props.onName}/image01.png`)}
           alt=""
         />
-        <ParTwo>{this.props.onExp[2]}</ParTwo>
-        <ImageTwo
+        <Paragraph top={310 + "vh"} width={80 + "vw"} mtop={220 + "vh"} mwidth={80 + "vw"}>{this.props.onExp[2]}</Paragraph>
+        <Image top={230 + "vh"} width={80 + "vw"} mtop={300 + "vh"} mwidth={80 + "vw"}
           src={require(`../assets/images/${this.props.onName}/image02.png`)}
           alt=""
         />

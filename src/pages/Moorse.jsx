@@ -34,7 +34,7 @@ export default class Moorse extends Component {
         <ProjectInfo onInfo={this.state.info} />
         <Jumbotron onName={this.state.name} />
         <ProjectExp onExp={this.state.exp} onName={this.state.name} />
-        <Footer onLink={this.state.link} onTop={400} onMTop={380}></Footer>
+        <Footer onLink={this.state.link} onTop={360} onMTop={330}></Footer>
       </div>
     );
   }
