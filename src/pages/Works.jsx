@@ -23,7 +23,7 @@ export default class Works extends Component {
           id: 1,
           name: "moorse",
           abstract:
-            "moorse is morse code translator feature of audio and visual decoding.it build with tone.js and react.",
+            "moorse is morse code translator of audio and visual decoding. it is built with tone.js and react.",
           model: "moorse"
         },
         {
@@ -37,21 +37,21 @@ export default class Works extends Component {
           id: 3,
           name: "shelves",
           abstract:
-            "shelves is library and storage for smally family in izmir. it is assembled by no glue of screw.",
+            "shelves is a library and storage for a small family in izmir. no glue and screws are used in installation",
           model: "shelves"
         },
         {
           id: 4,
-          name: "scenect",
+          name: "kinesis",
           abstract:
-            "scenect is using depth data of kinect for scaning objects in real life. Also it convert this data for web interfaces.",
+            "kinesis is using depth data of kinect for scaning objects in real life. also it converts this data for web interfaces.",
           model: "kinect"
         },
         {
           id:5,
           name: "experiments",
           abstract:
-          "In experiments, i want to use web technologies for making generative art.through this projects, my aim is improve my coding skill with my design background",
+          "in experimental projects, i would like to use web technologies for making generative art. through this experiments, my aim is to improve my coding skill with my design background",
           model: "experiments"
         }
       ]

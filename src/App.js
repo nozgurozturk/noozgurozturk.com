@@ -5,7 +5,7 @@ import Works from "./pages/Works";
 import Moorse from "./pages/Moorse";
 import Skin from "./pages/Skin";
 import Shelves from "./pages/Shelves";
-import Scenect from "./pages/Scenect";
+import Kinesis from "./pages/Kinesis";
 import Experiments from "./pages/Experiments";
 
 
@@ -20,7 +20,7 @@ export default class App extends Component {
             <Route path="/works/moorse" component={Moorse} />
             <Route path="/works/skin" component={Skin} />
             <Route path="/works/shelves" component={Shelves} />
-            <Route path="/works/scenect" component={Scenect} />
+            <Route path="/works/kinesis" component={Kinesis} />
             <Route path="/works/experiments" component={Experiments} />
           </Switch>
         </div>

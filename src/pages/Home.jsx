@@ -9,6 +9,7 @@ import resume from "../assets/icons/document.svg";
 import arrow from "../assets/icons/goArrow.svg";
 import github from "../assets/icons/github.svg";
 import mail from "../assets/icons/mail.svg";
+import cv from "../assets/cv.pdf";
 
 const Bold = styled.span`
   font-family: "Borda DB";
@@ -226,7 +227,7 @@ export default class Home extends Component {
     this.state = {
       name: "N.Ozgur Ozturk",
       text:
-        "I am Ozgur a designer who has some coding skill . I want to specialized in 3D web Interface and creative coding.",
+        "I am Ozgur, a designer who has some coding skills . I want to specialize in 3D web Interface and creative coding.",
       year: null
     };
   }
@@ -487,7 +488,7 @@ export default class Home extends Component {
               <ProjectArrow path={arrow} />
             </BoxProject>
           </Link>
-
+        <a href={cv} target="blabk">
           <BoxName>
             <BBL />
             <BBR />
@@ -504,6 +505,7 @@ export default class Home extends Component {
               </span>
             </Person>
           </BoxName>
+          </a>
           <a href="mailto:n.ozgurozturk@gmail.com">
             <MailLinks>
               <LinkIcon path={mail} />

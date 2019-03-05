@@ -13,9 +13,9 @@ export default class Moorse extends Component {
       id: 1,
       name: "moorse",
       exp: [
-        "moorse is morse code translator feature of audio and visual decoding.it build with tone.js and react.",
-        "Bacon ipsum dolor amet porchetta jerky frankfurter kevin rump. Venison pastrami short ribs, drumstick frankfurter tongue pork loin cow bacon andouille burgdoggen turducken t-bone ribeye. Jowl bacon kielbasa capicola, chuck jerky meatloaf chicken. Fatback beef ribs porchetta filet mignon pig, venison kielbasa doner shank bresaola swine landjaeger picanha. Ribeye meatloaf andouille leberkas ball tip tongue rump prosciutto burgdoggen ground round filet mignon.",
-        "Bacon ipsum dolor amet meatball shoulder sausage short ribs rump spare ribs ribeye porchetta fatback landjaeger chuck meatloaf pancetta tail. Turkey prosciutto meatball filet mignon salami flank short ribs capicola chuck beef. Capicola turducken filet mignon salami cupim, short loin pastrami alcatra picanha. Tenderloin tri-tip corned beef porchetta tail cupim. Corned beef kevin boudin pancetta, beef capicola tri-tip ribeye meatball.Sirloin fatback hamburger filet mignon ground round. Drumstick strip steak filet mignon, biltong turducken flank beef ribs bacon porchetta burgdoggen tri-tip pig pork chop. Doner kielbasa tri-tip picanha hamburger salami shankle. Boudin brisket jerky, tail burgdoggen strip steak ribeye pork chop bresaola ham."
+        "Moorse is morse code translator feature of audio and visual decoding. It build with tone.js and react. Moorse provides a unique experience to user with their senteces, words or random letter combinations.",
+        "Dots in lines that has been usen in moorse logo refers to signs in morse alphabet. Minimalist aspect of the logo complements the design of website. Simple interface allows the user a better experience. Througn responsive design, site is available different platform such as mobile and desktop.",
+        "On moorse project, for every chracter in latin alphabet website creates a diffrenet virtual representation based on morse code. In meant time using tone.js library these characters converted to different audio forms. Tone.js uses its oscillator structre to create audio form in three different waveforms which are called sine, sawtooth and square. User is also provided a feature that they can change the bpm between 30 and 240 to adjust the rhythm. In order to explore bpm and waveform feature, user has been provided the information needed."
       ],
       info: {
         field: "audio",
