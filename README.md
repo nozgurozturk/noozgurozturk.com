@@ -1,5 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Personal Website 
+### Personal Website of N.Ozgur Ozturk
+
+#### https://www.nozgurozturk.com
+
+Hosted by Netfily.
 
 
