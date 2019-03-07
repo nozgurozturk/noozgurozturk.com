@@ -14,7 +14,7 @@ export default class Skin extends Component {
       id: 2,
       name: "skin",
       exp: [
-        "SKIN is a project that combines the concepts of recycling and technology in order to create an interactive installation.The workshop will be led by me and Ali Arslan. ",
+        "SKIN is a project that combines the concepts of recycling and technology in order to create an interactive installation.The workshop led by me and Ali Arslan. ",
         "We propose  building a panel of arches or domes, utilising diferent diameters of sections from recycled advertising cardboard tubes. In addition to assembly, cutting and pasting these tubes, participants will have the chance to learn programming concepts, Arduino boards that will create, using motion sensors, a game of led lights installed in the cardboard walls. The result will be dictated by the curiosity of passersby and their movements that will create a playful and captivating visual efect.",
         "Skin is a digital layer that is placed on the spots where the kinesis of the city appears, detachedly from its form (wall, dome, arc, etc.). Its sole purpose is to mimic the “being” that passed it by shortly before. While doing this, it is possible that Skin will be inserting random/instantaneous reactions just like humans do. The actions of Skin depending on the technology it can use and the ability of perception of the sensors are improvable. However, at this stage the sensors can react to the “things” that pass by in forms of light and movement.In this context, time is a crucial parameter."
       ],
